@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/rest.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="title">Test</h1>
+    <div class="row">
+        <div class="input-group">
+            <p class="label">Name/Value Pair</p>
+            <input type="text" id="inputPair" placeholder="Name=Value">
+        </div>
+        <div class="button-group">
+            <button onclick="addPair()">Add</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-group">
+            <p class="label">Name/Value Pair List</p>
+            <select id="list" multiple></select>
+        </div>
+        <div class="button-group">
+            <button onclick="sortByName()">Sort by Name</button>
+            <button onclick="sortByValue()">Sort by Value</button>
+            <button onclick="deleteSelected()" class="delete-btn">Delete</button>
+        </div>
+    </div>
+</div>
+<script src="scripts/script.js"></script>
+</body>
+</html>
